@@ -1,0 +1,143 @@
+.registred-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registred-form-title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+.registred-form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.registred-form-field {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.registred-form-label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: var(--secondary-text-color);
+}
+
+.registred-form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  transition: border-color var(--transition);
+}
+
+.registred-form-input:focus {
+  border-color: var(--accent);
+}
+
+.registred-form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  transition: fill var(--transition);
+}
+
+.registred-form-input:focus + .registred-form-icon {
+  fill: var(--accent);
+}
+
+.registred-form-agree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 7px;
+}
+
+.registred-form-textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  outline: transparent;
+  transition: border-color var(--transition);
+}
+
+.registred-form-textarea::placeholder {
+  font-size: 12px;
+}
+
+.registred-form-textarea:focus {
+  border-color: var(--accent);
+}
+
+.registred-form-chekbox:checked + .registred-form-chekbox-icons .icon-checked {
+  opacity: 1;
+}
+
+.icon-dischecked {
+  transition: opacity var(--transition);
+}
+
+.registred-form-chekbox-icons:focus,
+.registred-form-chekbox-icons:hover {
+  background-color: var(--accent);
+}
+
+.registred-form-chekbox:checked + .registred-form-chekbox-icons .icon-dischecked {
+  opacity: 0;
+}
+
+.registred-form-text:focus,
+.registred-form-text:hover {
+  color: var(--accent);
+}
+
+.registred-form-text {
+  user-select: none;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: calc(24 / 14);
+}
+
+.registred-form-btn {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  color: var(--white);
+  background-color: var(--accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.icon-checked {
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.contract {
+  color: var(--accent);
+  text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+.menu-header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.main-logo-text {
+  color: #000000;
+}
+
+.header-group{
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-link,
+.header-item {
+  display: block;
+  align-items: center;
+}
+
+.header-group{
+  margin-right: 0;
+}
+
+.header-group li {
+  margin-right: 50px;
+}

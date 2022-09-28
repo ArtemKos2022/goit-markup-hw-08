@@ -1,0 +1,41 @@
+.address,
+.address-items,
+.address-link {
+  color: var(--white);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.main-logo-text-white {
+  color: var(--white);
+}
+
+.address-link,
+.address-mail,
+.address-item1 {
+  margin-bottom: 9px;
+}
+
+.link-address {
+  fill: currentColor;
+}
+
+.address-contact {
+  font-style: normal;
+  color: #ffffff99;
+  transition: color var(--transition);
+}
+
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--accent);
+}
+
+.address-footer {
+  display: flex;
+}
+
+.address-item {
+  list-style: none;
+}

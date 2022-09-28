@@ -1,0 +1,39 @@
+.contact-item {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+
+.contact-item {
+  margin-right: 0;
+  list-style: none;
+}
+
+.contact-item li{
+  margin-right: 50px;
+}
+
+.contact-link {
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.link-nav {
+  text-decoration: none;
+  /* color: var(--primary-color); */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent);
+}

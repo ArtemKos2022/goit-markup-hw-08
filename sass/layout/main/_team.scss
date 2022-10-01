@@ -1,32 +1,53 @@
-.teams__list {
-  display: flex;
-  gap: 30px;
-}
-
-.teams__item {
-  background-color: var(--white);
-  width: 270 px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.teams__card {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .teams {
   background-color: #f5f4fa;
 }
 
 .teams__title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  // line-height: 1.17;
+  line-height: calc(33 / 28);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
-  margin-bottom: 50px;
+
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+
+    margin-bottom: 50px;
+  }
+}
+
+.teams__list {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: unset;
+    align-items: unset;
+  }
+}
+
+.teams__item {
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  // width: 270 px;
+  text-align: center;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 90px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
 }
 
 .teams__subtitle {
@@ -44,4 +65,34 @@
   text-align: center;
   color: var(--secondary-text-color);
   margin-bottom: 16px;
+}
+.teams__card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.socials__list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social__links {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--social-links);
+  fill: var(--white);
+
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.social__links:hover,
+.social__links:focus {
+  color: var(--white);
+  background-color: var(--accent);
 }

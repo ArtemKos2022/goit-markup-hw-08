@@ -1,5 +1,5 @@
-.footer-socials {
-  .footer-socials__title {
+.footer-socials{
+  &__title {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -14,12 +14,12 @@
     }
   }
 
-  .footer-socials__list {
+  &__list {
     display: flex;
     gap: 10px;
   }
 
-  .footer-socials__link {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,8 +31,8 @@
     transition: background-color var(--transition);
   }
 
-  .footer-socials__link:hover,
-  .footer-socials__link:focus {
+  &__link:hover,
+  &__link:focus {
     background-color: var(--accent);
   }
 }

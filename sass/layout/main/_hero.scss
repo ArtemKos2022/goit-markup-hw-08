@@ -18,63 +18,63 @@
 
   @media screen and (min-width: 1200px) {
     padding: 200px 0;
-}
-
-.hero-title {
-  font-weight: 900;
-  // font-size: 44px;
-  font-size: 26px;
-  // line-height: 1.36;
-  line-height: calc(42 / 26);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white);
-  // margin-top: 0;
-  margin-bottom: 30px;
-  width: 360px;
-  margin-left: auto;
-  margin-right: auto;
-  // text-align: center;
-
-  @media screen and (max-width: 479px) {
-    width: auto;
   }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    width: 696px;
+  .hero-title {
+    font-weight: 900;
+    // font-size: 44px;
+    font-size: 26px;
+    // line-height: 1.36;
+    line-height: calc(42 / 26);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+    // margin-top: 0;
+    margin-bottom: 30px;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    // text-align: center;
+
+    @media screen and (max-width: 479px) {
+      width: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: calc(60 / 44);
+      width: 696px;
+    }
+  }
+
+  .btn-hero {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: var(--accent);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    // padding: 10px 32px;
+    padding: 10px 24px;
+    min-width: 216px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    transition: color var(--transition), background-color var(--transition);
+
+    @media screen and (min-width: 1200px) {
+      padding: 10px 32px;
+    }
+  }
 }
-}
-
-.btn-hero {
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  background-color: var(--accent);
-  color: var(--white);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  // padding: 10px 32px;
-  padding: 10px 24px;
-  min-width: 216px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  transition: color var(--transition), background-color var(--transition);
-
-  @media screen and (min-width: 1200px) {
-    padding: 10px 32px;
-
-} }}
 
 .module-btn-hero {
   background-color: #188ce8;
 }
-

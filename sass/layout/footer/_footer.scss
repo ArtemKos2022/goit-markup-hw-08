@@ -1,13 +1,13 @@
 .footer {
-  background:#2f303a;;
+  background: #2f303a;
   padding: 60px 0;
 
-  .ft__wrap {
+  &__wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 60px;
-      
+
     @media screen and (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -21,13 +21,13 @@
     }
   }
 
-  .footer__logo {
+  &__logo {
     display: block;
-    font-family: var(--logo-font);
+    font-family: var(--secondary-font);
     font-size: 24px;
     line-height: calc(28 / 24);
     letter-spacing: 0.03em;
-    color: var(--main-bg-clr);
+    color: var(--white);
     margin-bottom: 20px;
     text-align: center;
 

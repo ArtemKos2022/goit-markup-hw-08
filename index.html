@@ -23,42 +23,40 @@
     <!-- <body class="page"> -->
     <!--Шапка сторінки-->
 
-      <!-- <header class="menu-header"> -->
+      <header class="header"> 
       <!--меню навігації на наступні сторінки-->
 
-      <!-- <div class="container header-container">
-        <nav class="main-nav">
-          <div class="header-link">
-            <a class="main-logo link" lang="en" href="/"
-              >Web<span class="main-logo-text">Studio</span></a
-            >
-          </div>
-
-          <ul class="main-nav-items list">
+        <div class="container header__container">
+        <!-- <nav class="main-nav">
+          <div class="header-link"> -->
+            <a class="header__logo" lang="en" href="/">
+              <span class="main-logo">Web</span>Studio</a>
+              <nav class="nav">
+          <ul class="nav__list">
             <li class="nav-item header-item">
-              <a class="nav-link link current" href="./index.html"> Студія </a>
+              <a class="nav__link current" href="./index.html"> Студія </a>
             </li>
-            <li class="nav-item header-item">
-              <a class="nav-link link" href="./portfolio.html">Портфоліо</a>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav-item header-item">
-              <a class="nav-link link" href="/Контакты">Контакти</a>
+            <li class="nav__item">
+              <a class="nav__link" href="/Контакты">Контакти</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="header-group list">
-          <li class="contact-item">
-            <a class="contact-link link link-nav" href="mailto:info@devstudio.com"
-              ><svg class="link-address" width="16" height="12">
+        <ul class="contact">
+          <li class="contact__item">
+            <a class="contact__mail" href="mailto:info@devstudio.com"
+              ><svg class="contact__logo" width="16" height="12">
                 <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact-item">
-            <a class="contact-link link link-nav" href="tel:+380961111111"
-              ><svg class="link-address" width="10" height="16">
+          <li class="contact__item">
+            <a class="contact__mail" href="tel:+380961111111"
+              ><svg class="contact__logo" width="10" height="16">
                 <use href="./images/icons.svg/symbol-defs.svg#icon-Vector"></use>
               </svg>
               +38 096 111 11 11</a
@@ -66,7 +64,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -166,14 +164,14 @@
       <section class="skils section">
         <div class="container">
           <h2 class="visually-hidden">Галерея робіт</h2>
-          <ul class="skils__list list">
+          <ul class="skils__list">
             <li class="skils__item">
               <div class="skils__block">
                 <svg class="skils__icon" width="70px" height="70px">
                   <use href="./images/icons.svg/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="skils__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <h3 class="skils__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="skils__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
@@ -184,7 +182,7 @@
                   <use href="./images/icons.svg/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="skils__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <h3 class="skils__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="skils__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе..
               </p>
@@ -195,7 +193,7 @@
                   <use href="./images/icons.svg/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="skils__subtitle">ПЛАНУВАННЯ</h3>
+              <h3 class="skils__title">ПЛАНУВАННЯ</h3>
               <p class="skils__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
@@ -206,7 +204,7 @@
                   <use href="./images/icons.svg/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="skils__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <h3 class="skils__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="skils__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
@@ -563,14 +561,15 @@
     </main> 
 
     <!--Підвал сторінки -->
+
       <footer class="footer">
-      <div class="container  ft__wrap">
+      <div class="container footer__wrap">
         <div class="footer__container">
           <a class="footer__logo" lang="en" href="./index.html"
             ><span class="main-logo">Web</span>Studio</a>
           <address class="address">
             <ul class="address__list">
-              <li class="address-item">
+              <li class="address__item">
                 <a
                   class="address__link"
                   href="https://goo.gl/maps/Bq6WexbLNgEqduPN9"
@@ -604,7 +603,7 @@
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram"></a>
+                  aria-label="Instagram">
                   <svg class="footer-socials__icon" width="20" height="20">
                     <use href="./images/icons.svg/symbol-defs.svg#icon-instagram"></use>
                   </svg>
@@ -616,7 +615,7 @@
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Twitter"></a>
+                  aria-label="Twitter">
                   <svg class="footer-socials__icon" width="20" height="20">
                     <use href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
                   </svg>
@@ -627,7 +626,7 @@
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Facebook"></a>
+                  aria-label="Facebook">
                   <svg class="footer-socials__icon" width="20" height="20">
                     <use href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
                   </svg>
@@ -639,7 +638,7 @@
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Linkedin"></a>
+                  aria-label="Linkedin">
                   <svg class="footer-socials__icon" width="20" height="20">
                     <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -651,18 +650,18 @@
         <!-- Підпишіться на розсилку -->
 
           <form class="email-form" name="email-form">
-          <span class="email-form-title">Підпишіться на розсилку</span>
+          <span class="email-form__title">Підпишіться на розсилку</span>
           <div class="email-form-group" role="group">
-            <label>
+            <label class="email-form__label">
               <input
-                class="email-form-input"
+                class="email-form__input"
                 type="email"
                 name="email"
                 placeholder="E-mail"
                 required/>
               </label>
             <button class="email-form-btn" type="submit">
-              <span class="email-form-btn-text">Підписатися</span>
+              <span class="email-form-btn__text">Підписатися</span>
               <svg width="24" height="24">
                 <use href="./images/icons.svg/symbol-defs.svg#icon-icon-send"></use>
               </svg>
@@ -671,6 +670,8 @@
         </form>
       </div>
     </footer>
+
+
     <script src="./js/modal.js"></script>
   </body>
 </html>

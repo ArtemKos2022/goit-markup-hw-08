@@ -1,5 +1,5 @@
 .address {
-  .address__list {
+  &__list {
     font-style: normal;
     display: flex;
     flex-direction: column;
@@ -11,14 +11,14 @@
     }
   }
 
-  .address__link {
+  &__link {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--white);
   }
 
-  .address__mail {
+  &__mail {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -26,12 +26,12 @@
     transition: color var(--transition);
   }
 
-  .address__mail:hover,
-  .address__mail:focus {
+  &__mail:hover,
+  &__mail:focus {
     color: var(--accent);
   }
 
-  .address__tel {
+  &__tel {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -39,32 +39,27 @@
     transition: color var(--transition);
   }
 
-  .address__tel:hover,
-  .address__tel:focus {
+  &__tel:hover,
+  &__tel:focus {
     color: var(--accent);
   }
-  }
+}
 
+// .main-logo {
+//   color: var(--white);
+// }
 
-  // .main-logo {
-  //   color: var(--white);
-  // }
+// .address__item {
+//   margin-bottom: 9px;
+// }
 
-  // .address__item {
-  //   margin-bottom: 9px;
-  // }
+// .link-address {
+//   fill: currentColor;
+// }
 
-  // .link-address {
-  //   fill: currentColor;
-  // }
+// .address-footer {
+//   display: flex;
+// }
 
-  
-
-  // .address-footer {
-  //   display: flex;
-  // }
-
-  // .address__item {
-  //   list-style: none;
-  
-
+// .address__item {
+//   list-style: none;

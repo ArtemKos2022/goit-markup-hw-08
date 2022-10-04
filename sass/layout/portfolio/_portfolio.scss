@@ -1,21 +1,60 @@
-.portfolio-cards {
-  background: #ffffff;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  padding: 20px 24px 20px 24px;
-}
+.portfolio {
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
-.cards-thumb {
-  position: relative;
-  overflow: hidden;
-}
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
 
-.cards-thumb:hover .overlay,
-.cards-thumb:focus .overlay {
-  transform: translateY(0);
-}
+  &__item {
+    border: 1px solid #eeeeee;
+    transition: box-shadow var(--transition);
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+    }
+  }
+
+  &__item:hover,
+  &__item:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__thumb:hover .overlay,
+  &__thumb:focus .overlay {
+    transform: translateY(0);
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+    padding: 20px 0 4px 24px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    padding-bottom: 20px;
+    padding-left: 24px;
+  }
+
 
 .overlay {
   position: absolute;
@@ -32,43 +71,10 @@
   transition: transform var(--transition);
 }
 
-.overlay-content {
+.overlay__content {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: var(--white);
+  color: #fff
 }
-
-.cards-title {
-  color: var(--primary-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.cards-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  margin-top: 4px;
-  color: var(--secondary-text-color);
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.cards-item {
-  transition: box-shadow var(--transition);
-  width: calc((100% - 60px) / 3);
-  border: 1px solid #eeeeee;
-}
-
-.cards-item:hover,
-.cards-item:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

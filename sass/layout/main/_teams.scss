@@ -1,0 +1,122 @@
+.teams {
+  background-color: #f5f4fa;
+
+
+.teams__title {
+  font-size: 28px;
+  // line-height: 1.17;
+  line-height: calc(33 / 28);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+
+    margin-bottom: 50px;
+  }
+}
+
+.teams__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  // width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+.teams__item {
+  background: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270 px;
+  text-align: center;
+}
+
+.teams__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+.teams__text {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-bottom: 16px;
+}
+}
+.socials {
+  .socials__list{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 30px
+  }
+
+  .socials__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--social-links);
+    transition: background-color var(--transition), fill var(--transition);
+  }
+  .socials__link:hover,
+  .socials__link:focus{
+    background-color: var(--accent);
+    fill: var(--social-links);
+  }
+
+
+}
+
+
+
+// .socials__list {
+//   display: flex;
+//   gap: 10px;
+//   justify-content: center;
+// }
+
+// .socials__link {
+//   width: 44px;
+//   height: 44px;
+//   background-color: rgba(255, 255, 255, 0.1);
+//   border-radius: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: var(--social-links);
+//   fill: var(--white);
+
+//   transition: background-color var(--transition), color var(--transition);
+// }
+
+// .social__links:hover,
+// .social__links:focus {
+//   color: var(--white);
+//   background-color: var(--accent);
+// }

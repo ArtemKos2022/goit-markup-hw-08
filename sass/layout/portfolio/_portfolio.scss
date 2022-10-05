@@ -66,14 +66,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 63px 24px;
+  padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform var(--transition);
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 
 .overlay__content {
   font-size: 18px;
-  line-height: 28px;
+  line-height: calc(28 / 18);
   letter-spacing: 0.03em;
   color: #fff
 }

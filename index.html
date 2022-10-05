@@ -61,6 +61,11 @@
             >
           </li>
         </ul>
+        <button class="js-open-menu menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg/symbol-defs.svg#menu-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -669,8 +674,41 @@
       </div>
     </footer>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="close-menu js-close-menu" tupe="button">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg/symbol-defs.svg#menu-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav">
+        <li class="mobil-nav__item"><a class="mobile-nav__link current" href="./index.html">Студія</a></li>
+        <li class="mobil-nav__item"><a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a></li>
+        <li class="mobil-nav__item"><a class="mobile-nav__link" href="./portfolio.html">Контакти</a></li>
+        </ul>
+        <ul class="mobile-contact">
+          <li class="mobile-contact__item">
+            <a class="mobile-contact__tel" href="+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contact__item">
+              <a class="mobile-contact__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              </ul>
+              <ul class="mobile-socials">
+                <li class="mobile-socials__item"><a class="mobile-socials__link" href="https://instagram.com">Instagram</a>
+              </li>
+              <li class="mobile-socials__item"><a class="mobile-socials__link" href="https://twitter.com">Twitter</a>
+              </li>
+              <li class="mobile-socials__item"><a class="mobile-socials__link" href="https://facebook.com">Facebook</a>
+              </li>
+              <li class="mobile-socials__item"><a class="mobile-socials__link" href="https://linkedin.com">Linkedin</a>
+              </li>
+            </ul>
+          </div>
 
+  <!-- modal -->
     <script src="./js/modal.js"></script>
+    <!-- mobile menu -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

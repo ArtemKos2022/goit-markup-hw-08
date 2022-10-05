@@ -1,7 +1,16 @@
 .header {
+  position: relative;
   background-color: var(--white);
   border-bottom: 1px solid #ececec;
-  padding: 24px 0;
+  padding: 16px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0;
+  }
 
   &__container {
     display: flex;
@@ -11,10 +20,18 @@
   &__logo {
     font-family: var(--secondary-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: calc(28 / 24);
     letter-spacing: 0.03em;
     color: #000000;
-    margin-right: 93px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: calc(31 / 26);
+    }
   }
 }

@@ -1,20 +1,12 @@
 .hero {
   // background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   //   url(../images/hero.jpg);
-  background-color: #2f303a;
   max-width: 1600px;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
   margin: 0 auto;
   padding: 118px 0;
   text-align: center;
 
-  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #2f303a;
 
   @media screen and (min-width: 1200px) {
     padding: 200px 0;
@@ -22,21 +14,19 @@
 
   .hero-title {
     font-weight: 900;
-    // font-size: 44px;
     font-size: 26px;
-    // line-height: 1.36;
     line-height: calc(42 / 26);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
-    // margin-top: 0;
-    margin-bottom: 30px;
+
     width: 360px;
+
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    // text-align: center;
-
-    @media screen and (max-width: 479px) {
+    
+   @media screen and (max-width: 479px) {
       width: auto;
     }
 
@@ -48,26 +38,34 @@
   }
 
   .btn-hero {
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
+    // border: none;
+    // cursor: pointer;
+    // font-family: inherit;
+    
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 1.87;
+    // display: flex;
+    // align-items: center;
+    // // padding: 10px 32px;
+    // padding: 10px 24px;
+    // min-width: 216px;
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    // text-align: center;
+    // letter-spacing: 0.06em;
+    // border-radius: 4px;
+    // // transition: color var(--transition), background-color var(--transition);
+    border-radius:4px;
     background-color: var(--accent);
     color: var(--white);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    display: flex;
-    align-items: center;
-    // padding: 10px 32px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: inline-block;
     padding: 10px 24px;
-    min-width: 216px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    letter-spacing: 0.06em;
-    border-radius: 4px;
-    transition: color var(--transition), background-color var(--transition);
+    height: 50px;
 
     @media screen and (min-width: 1200px) {
       padding: 10px 32px;

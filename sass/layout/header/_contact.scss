@@ -1,73 +1,78 @@
 .contact {
-  display: flex;
-  gap: 30px;
-  // flex-basis: calc((100% - 50px) / 3);
+  display: none;
 
-  &__mail {
+  @media screen and (min-width: 768px) {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
-    transition: color var(--transition);
+    
   }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      gap: 30px;
+      flex-basis: calc((100% - 50px) / 3);
+    }
 
-  &__logo {
-    fill: var(--secondary-text-color);
-  }
+    &__mail {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
+      transition: color var(--transition);
 
-  &__tel {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
-    transition: color var(--transition);
-  }
+      @media screen and (min-width: 1200px) {
+        gap: 10px;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+      }
+    }
+
+    &__logo {
+      fill: var(--secondary-text-color);
+    }
+
+    &__tel {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
+      transition: color var(--transition);
+
+      @media screen and (min-width: 1200px) {
+        gap: 10px;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      &__mail:hover,
+      &__mail:focus {
+        color: var(--accent);
+      }
+
+      &__mail:hover &__logo,
+      &__mail:focus &__logo {
+        fill: currentColor;
+      }
+
+      &__tel:hover,
+      &__tel:focus {
+        color: var(--accent);
+      }
+
+      &__tel:hover &__logo,
+      &__tel:focus &__logo {
+        fill: currentColor;
+      }
+    }
   
-  &__mail:hover,
-  &__mail:focus {
-    color: var(--accent);
-  }
-
-  &__mail:hover &__logo,
-  &__mail:focus &__logo {
-    fill: currentColor;
-  }
-
-  &__tel:hover,
-  &__tel:focus {
-    color: var(--accent);
-  }
-
-  &__tel:hover &__logo,
-  &__tel:focus &__logo {
-    fill: currentColor;
-  }
 }
-  // .contact__item {
-  //   margin-right: 0;
-  //   list-style: none;
-  // }
-
-  
-  // .contact__item li {
-  //   margin-right: 50px;
-  // }
-
-  // .link-nav {
-  //   text-decoration: none;
-  //   /* color: var(--primary-color); */
-  //   display: flex;
-  //   align-items: center;
-  //   gap: 10px;
-  // }
-
-  
-

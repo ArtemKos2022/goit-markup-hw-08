@@ -1100,6 +1100,7 @@ button {
   border: solid 1px #afb1b8;
   fill: #afb1b8;
   border-radius: 4px;
+  height: 92px;
   -webkit-transition: border-color var(--transition), fill var(--transition);
   transition: border-color var(--transition), fill var(--transition);
 }

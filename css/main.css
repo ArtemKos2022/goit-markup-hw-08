@@ -1097,10 +1097,11 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  height: 92px;
+  border-radius: 4px;
   border: solid 1px #afb1b8;
   fill: #afb1b8;
-  border-radius: 4px;
-  height: 92px;
   -webkit-transition: border-color var(--transition), fill var(--transition);
   transition: border-color var(--transition), fill var(--transition);
 }
@@ -1148,6 +1149,9 @@ button {
   .footer__wrap {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .footer__logo {
@@ -1219,10 +1223,16 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .email-form {
     margin: 60px auto 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .email-form {
+    width: auto;
   }
 }
 .email-form__title {
@@ -1241,29 +1251,18 @@ button {
   }
 }
 .email-form .email-form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .email-form .email-form-group {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     gap: 12px;
   }
 }
 .email-form__input {
-  display: inline-block;
+  display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1271,14 +1270,17 @@ button {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
+  margin-bottom: 20px;
   color: var(--white);
 }
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 768px) {
   .email-form__input {
-    width: 100%;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1304,6 +1306,12 @@ button {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .email-form-btn {
+    margin: unset;
+  }
 }
 .email-form-btn__text {
   font-weight: 700;
